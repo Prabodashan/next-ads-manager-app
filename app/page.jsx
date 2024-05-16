@@ -1,7 +1,6 @@
-
-import InfoBoxes from "@/components/Sections/InfoBoxes";
-import Hero from "@/components/Sections/Hero";
-import Homeproperties from "@/components/Sections/Homeproperties";
+import InfoBoxes from "@/components/sections/InfoBoxes";
+import Hero from "@/components/sections/Hero";
+import Homeproperties from "@/components/sections/Homeproperties";
 
 const HomePage = () => {
   return (
@@ -14,4 +13,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-   

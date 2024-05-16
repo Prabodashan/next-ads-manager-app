@@ -1,7 +1,7 @@
 import "@/assets/styles/globals.css";
 
-import Navbar from "@/components/Sections/Navbar";
-import Footer from "@/components/Sections/Footer";
+import Navbar from "@/components/sections/Navbar";
+import Footer from "@/components/sections/Footer";
 
 export const metadata = {
   title: "Add Manager |Find The Perfect",

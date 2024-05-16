@@ -2,14 +2,11 @@ import React from "react";
 
 import Link from "next/link";
 
-import {fetchProperties} from "@/utils/requests"
+import { fetchProperties } from "@/utils/requests";
 
-import PropertyCard from "@/components/Elements/PropertyCard";
-
-
+import PropertyCard from "@/components/elements/PropertyCard";
 
 const Homeproperties = async () => {
-
   const properties = await fetchProperties();
 
   const recentproperties = properties
