@@ -36,9 +36,9 @@ const Navbar = () => {
               <svg
                 className="block h-6 w-6"
                 fill="none"
-                npm
-                run
-                dev
+                npm="true"
+                run="true"
+                dev="true"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"

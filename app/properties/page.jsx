@@ -2,8 +2,9 @@ import React from "react";
 
 import Link from "next/link";
 
-import properties from "@/properties.json";
 import PropertyCard from "@/components/Elements/PropertyCard";
+
+import properties from "@/properties.json";
 
 const PropertiesPage = () => {
   return (
