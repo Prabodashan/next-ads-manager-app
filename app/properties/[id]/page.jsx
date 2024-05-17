@@ -11,6 +11,7 @@ import { fetchProperty } from "@/utils/requests";
 import PropertyHeaderImage from "@/components/elements/PropertyHeaderImage";
 import PropertyDetails from "@/components/sections/PropertyDetails";
 import Spinner from "@/components/elements/Spinner";
+import PropertyImages from "@/components/elements/PropertyImages";
 
 const PropertyPage = () => {
   const { id } = useParams();
@@ -153,6 +154,7 @@ const PropertyPage = () => {
               </div>
             </div>
           </section>
+          <PropertyImages images={property.images} />
         </>
       )}
     </>
