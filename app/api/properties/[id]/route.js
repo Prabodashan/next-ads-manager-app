@@ -1,5 +1,8 @@
 import connectDB from '@/config/database';
+
 import Property from '@/models/Property';
+
+import { getSessionUser } from '@/utils/getSessionUser';
 
 // GET /api/properties/:id
 export const GET = async (request, { params }) => {
@@ -55,7 +58,7 @@ export const PUT = async (request, { params }) => {
         // Create propertyData object for database
         const propertyData = {
             type: formData.get('type'),
-            name: formData.get('name'), 
+            name: formData.get('name'),
             description: formData.get('description'),
             location: {
                 street: formData.get('location.street'),
@@ -88,7 +91,7 @@ export const PUT = async (request, { params }) => {
         });
     } catch (error) {
         console.log(error);
-        return new Response('Failed to add property', { status: 500 });
+        return new Response('Failed to update property', { status: 500 });
     }
 };
 

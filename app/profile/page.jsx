@@ -1,10 +1,13 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import Image from "next/image";
 
 import { toast } from "react-toastify";
+
+import Spinner from "@/components/elements/Spinner";
 
 import profileDefault from "@/assets/images/profile.png";
 
@@ -88,6 +91,7 @@ const ProfilePage = () => {
                   width={200}
                   height={200}
                   alt="User"
+                  priority={true}
                 />
               </div>
               <h2 className="text-2xl mb-4">
