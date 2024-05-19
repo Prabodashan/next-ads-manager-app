@@ -10,7 +10,7 @@ import { fetchProperty } from "@/utils/requests";
 
 import PropertyDetails from "@/components/sections/PropertyDetails";
 import PropertyHeaderImage from "@/components/elements/PropertyHeaderImage";
-import PropertyImages from "@/components/elements/PropertyImages";
+import PropertyImages from "@/components/sections/PropertyImages";
 import BookmarkButton from "@/components/elements/BookmarkButton";
 import PropertyContactForm from "@/components/sections/PropertyContactForm";
 import ShareButtons from "@/components/elements/ShareButtons";
